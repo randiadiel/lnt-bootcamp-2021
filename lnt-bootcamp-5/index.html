@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lnt Bootcamp 5</title>
+    <style>
+      .spoilers {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">Hello World</div>
+    <div>
+      <h2>Heading 1</h2>
+      <p class="spoilers">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        aspernatur eligendi est deleniti quasi error et, facere placeat dolorem
+        ipsa doloribus soluta vero hic veniam accusantium quos! Nobis,
+        voluptatum odio.
+      </p>
+    </div>
+    <div>
+      <h2>Heading 2</h2>
+      <p class="spoilers">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        aspernatur eligendi est deleniti quasi error et, facere placeat dolorem
+        ipsa doloribus soluta vero hic veniam accusantium quos! Nobis,
+        voluptatum odio.
+      </p>
+    </div>
+    <button id="unhideButton">Unhide</button>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+      //   $(document).ready(() => {
+      //     $("#root").addClass("spoilers");
+      //     $(".spoilers").removeClass("spoilers");
+      //     $("#unhideButton").click(() => {
+      //       if (isHidden)
+      //         $(".spoilers").fadeIn(1000, () => {
+      //           console.log("Content is now shown");
+      //         });
+      //       else $(".spoilers").fadeOut(1000);
+      //       isHidden = !isHidden;
+      //     });
+      //   });
+      $(document).ready(() => {
+        console.log($("#unhideButton"));
+        $("#unhideButton").click(() => {
+          $(".spoilers").toggle(5000);
+        });
+      });
+
+      class Animal {
+        constructor(sound) {
+          this.sound = sound;
+        }
+        processSound = () => {
+          return "My Sound is: " + this.sound;
+        };
+
+        makeSound = function () {
+          console.log(processSound());
+        };
+      }
+
+      Animal = function (sound) {
+        let processSound = () => {
+          return "My Sound is: " + sound;
+        };
+
+        this.makeSound = function () {
+          console.log(processSound());
+        };
+      };
+      const dog = new Animal("bark");
+      const cat = new Animal("meow");
+      dog.makeSound();
+      cat.makeSound();
+    </script>
+  </body>
+</html>

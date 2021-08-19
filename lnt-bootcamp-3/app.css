@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1.heading{
+    color: blue;
+}
+
+h1{
+    color: yellow!important;
+}
+
+nav{
+    background-color: aqua;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 1rem;
+    position: relative;
+}
+
+
+span.nav-links:hover{
+    background-color: brown;
+}
+
+.nav-links + span{
+    color: blueviolet;
+}
+
+.nav-links.active{
+    color: red;
+}
+
+.input-checkbox:checked + label{
+    color: chartreuse;
+}
+
+label{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+input:disabled{
+    border-color: azure;
+}
+
+p::before{
+    content: "";
+    background-color: bisque;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-links-group{
+    width: 15rem; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links-group .nav-links{
+    color: blue;
+}
+
+.nav-wrapper-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.nav-wrapper-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+}
+
+.nav-wrapper > span{
+    margin: 0rem 1rem;
+}

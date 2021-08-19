@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+
+* {
+  font-family: "Palette Mosaic", cursive;
+}
+
+.div-element {
+  /* display: inline-block; */
+  color: red;
+  background: url("https://www.renaultgroup.com/wp-content/themes/renault/assets/styles/images/logo-groupe-renault-new.svg");
+  background-size: cover;
+  background-position-y: -50%;
+  margin: 1rem 2rem;
+  padding: 2rem;
+  width: 70%;
+  height: 200px;
+  box-sizing: border-box;
+  border: 5px dashed black;
+  border-left-color: yellow;
+}
+
+/* .div-child {
+  background-color: black;
+  width: 80%;
+} */
+
+.span-element {
+  background-color: red;
+}
+
+@keyframes buletKotak {
+  0% {
+    border-radius: 0;
+    background-color: brown;
+  }
+  50% {
+    border-radius: 50%;
+    transform: translate(50px);
+    width: 10px;
+    height: 10px;
+    background-color: teal;
+  }
+  100% {
+    border-radius: 0;
+    background-color: brown;
+  }
+}
+
+.animation {
+  margin-top: 3rem;
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  animation: buletKotak 3s;
+  animation-iteration-count: infinite;
+}

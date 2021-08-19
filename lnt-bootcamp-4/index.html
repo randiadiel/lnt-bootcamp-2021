@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LNT Bootcamp</title>
+  </head>
+  <body>
+    <div class="container root hello" class="root" id="root">Bootcamp</div>
+    <script>
+      // var / let / const
+      let x = "0";
+      let g = 8;
+      const y = 5;
+      g = 6;
+      let rootElement = document.getElementById("root");
+      console.log(rootElement);
+
+      rootElement.classList.forEach((c) => {
+        console.log(c);
+      });
+
+      if (y === 5) {
+        var price = 10;
+        console.log(true);
+      } else if (y === 6) {
+        console.log(false);
+      } else {
+      }
+      let array = ["Randi", "Alex", "James"];
+      for (let i = 0; i < 5; i++) {
+        console.log(array[i]);
+        console.log(null);
+      }
+
+      function main(text) {
+        console.log("saya dari dalam function");
+        return text;
+      }
+
+      const secondMain = () => {
+        return "wait";
+      };
+
+      console.log(price);
+
+      console.log(secondMain());
+
+      console.log(x);
+    </script>
+  </body>
+</html>
