@@ -51,7 +51,7 @@ $(document).ready(() => {
     });
   };
   const getData = () => {
-    $.get({
+    $.ajax({
       url: BASE_API_URL + "/schedules",
       contentType: "application/json",
       dataType: "json",

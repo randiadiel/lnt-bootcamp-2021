@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List LnT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <div class="rounded me-2 bg-primary">!</div>
+          <strong class="me-auto">Alert</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Successfully Added Your ToDo</div>
+      </div>
+    </div>
+    <!-- Container  -->
+    <div class="container">
+      <div class="card my-4">
+        <div class="card-header">To Do List</div>
+        <div class="card-body">
+          <div
+            id="successAlert"
+            class="alert alert-success d-none"
+            role="alert"
+          >
+            Successfully Added your To Do!
+          </div>
+          <form action="/" id="toDoForm">
+            <label for="todo" class="form-label">Add Todo</label>
+            <div class="input-group">
+              <input
+                type="text"
+                id="todo"
+                class="form-control"
+                aria-describedby="todoHelp"
+              />
+              <input
+                type="submit"
+                value="Add"
+                class="btn btn-primary"
+                id="addButton"
+              />
+            </div>
+            <div id="todoHelp" class="form-text">
+              You can add any of your todo list above! Please make it
+              meaningfull :D
+            </div>
+          </form>
+        </div>
+        <ul id="toDoList" class="list-group list-group-flush">
+          <li class="list-group-item">No Items Available</li>
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
