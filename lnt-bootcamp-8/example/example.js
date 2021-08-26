@@ -1,12 +1,3 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyCxM73SI6LRU5CjgmVdpMucMAfWvUU51zQ",
-  authDomain: "lnt-bootcamp-bncc.firebaseapp.com",
-  projectId: "lnt-bootcamp-bncc",
-  storageBucket: "lnt-bootcamp-bncc.appspot.com",
-  messagingSenderId: "385964867384",
-  appId: "1:385964867384:web:6a117d2cff77b2fed24bcd",
-  measurementId: "G-PJSFZS80QX",
-};
 let localDb = [];
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
